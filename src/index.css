@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+
+    span,
+    a {
+        display: inline-block;
+    }
+}
+
+@utility container {
+    width: 83%;
+    margin-inline: auto
+}
+
+@layer components {
+    .btn {
+        @apply cursor-pointer grow-1 bg-gray-600 rounded-md py-1.5
+    }
+}
